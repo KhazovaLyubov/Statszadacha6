@@ -50,10 +50,10 @@ public class StatsService {
     }
 
     public int moreThanAverageSum(int[] array) {
-        int AverageSum = calculateAverageSum(array);
+        int averageSum = calculateAverageSum(array);
         int count = 0;
         for (int elem : array) {
-            if (elem > AverageSum) {
+            if (elem > averageSum) {
                 count++;
             }
         }
@@ -61,10 +61,10 @@ public class StatsService {
     }
 
     public int lessThanAverageSum(int[] array) {
-        int AverageSum = calculateAverageSum(array);
+        int averageSum = calculateAverageSum(array);
         int count = 0;
         for (int elem : array) {
-            if (elem < AverageSum) {
+            if (elem < averageSum) {
                 count++;
             }
         }
